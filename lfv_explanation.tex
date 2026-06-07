@@ -1,0 +1,35 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Lepton Flavor Violation in SHZ-BCC: The $\mu \to e \gamma$ Channel}
+
+Klasyczny Model Standardowy surowo zabrania rzadkiego zjawiska zmiany "zapachu" (generacji) leptonów. Oznacza to, że mion (cięższy kuzyn elektronu) nie może po prostu rozpaść się na elektron i foton ($\mu \to e \gamma$). 
+Jednak w modelu SHZ-BCC z otoczką Pati-Salama $SU(4)_C$, leptony są traktowane jako "czwarty kolor" kwarków. Ponieważ kwarki swobodnie zmieniają zapachy (co opisuje wyliczona przez nas macierz CKM), wymusza to \textbf{naturalne mieszanie zapachów również w sektorze leptonowym} poprzez pętle kwantowe z użyciem prawoskrętnych neutrin ($\nu_R$).
+
+\subsection*{1. Mechanizm Pętlowy}
+Proces $\mu \to e \gamma$ zachodzi poprzez tzw. pętlę "pingwina" (penguin diagram), w której krąży ciężkie prawoskrętne neutrino (o masie $M_R$) oraz bozon cechowania $W_R$ z prawoskrętnej symetrii $SU(2)_R$.
+Prawdopodobieństwo tego rozpadu (Branching Ratio, $\mathcal{B}$) można szacować jako:
+\begin{equation}
+    \mathcal{B}(\mu \to e \gamma) \simeq \frac{3 \alpha_{em}}{32 \pi} \left| \sum_i V_{\mu i}^* V_{e i} f\left(\frac{M_{R_i}^2}{M_{W_R}^2}\right) \right|^2.
+\end{equation}
+gdzie $V$ to elementy macierzy mieszania leptonów (analitycznie powiązane z CKM), a $f(x)$ to funkcja pętlowa.
+
+\subsection*{2. Kaskada Mas Neutrin i Predykcja $\mathcal{B}$}
+W naszej poprzedniej publikacji przypisaliśmy masę najcięższemu neutrinu $M_3 \sim 10^{14}$ GeV, aby wytłumaczyć masy zwykłych neutrin (Seesaw Mechanism). Gdy wstawimy tę masę wraz z wyliczonymi wcześniej parametrami mieszania opartymi na Cabibbo ($\lambda_{BCC}^3$), otrzymujemy sygnał uwięziony pomiędzy:
+\begin{equation}
+    10^{-15} \lesssim \mathcal{B}(\mu \to e \gamma) \lesssim 10^{-13}.
+\end{equation}
+
+\subsection*{3. Konsekwencje Eksperymentalne (MEG II i Mu2e)}
+Co niezwykle ważne, wynik ten znajduje się \textbf{tuż poniżej} obecnego wykluczenia eksperymentu MEG w Paul Scherrer Institute ($\mathcal{B} < 4.2 \times 10^{-13}$).
+Jednakże, wynik ten uderza bezpośrednio w środek pasma czułości działającego obecnie ulepszonego detektora \textbf{MEG II} (cel: $6 \times 10^{-14}$) oraz zaplanowanych eksperymentów \textbf{Mu2e} (Fermilab) i \textbf{COMET} (J-PARC), celujących w pokrewny proces konwersji $\mu \to e$ w jądrze atomowym.
+
+Sukces tego modelu można zatem zweryfikować w tanich, "biurkowych" eksperymentach wysoko-precyzyjnych (tzw. Precision Frontier), nie czekając na wybudowanie nowego zderzacza wielkości całej Europy.
+
+\end{document}

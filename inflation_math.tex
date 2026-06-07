@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Mathematical Formulation of SHZ-BCC Inflation}
+
+Aby Wszechświat uniknął katastrofy w postaci zdominowania przez sieć gęstych kosmicznych strun powstających przy łamaniu symetrii Pati-Salama ($M_{BCC} = 5 \times 10^{15}$ GeV), pole skalarne odpowiedzialne za to łamanie musi działać jako \textbf{Inflaton}.
+
+\subsection*{1. Potencjał Fałszywej Próżni (False Vacuum Potential)}
+Zakładamy standardowy potencjał z spontanicznym łamaniem symetrii:
+\begin{equation}
+    V(\phi) = \frac{\lambda}{4} \left( \phi^2 - v^2 \right)^2
+\end{equation}
+gdzie $v = M_{BCC}$ to oczekiwana wartość próżni (Vacuum Expectation Value). Gdy we wczesnym wszechświecie pole było uwięzione w tzw. fałszywej próżni ($\phi = 0$), energia Wszechświata była ogromna:
+\begin{equation}
+    V_0 = V(0) = \frac{\lambda}{4} M_{BCC}^4
+\end{equation}
+
+\subsection*{2. Tempo puchnięcia Wszechświata (Hubble Parameter)}
+Zgodnie z równaniami Friedmanna z Ogólnej Teorii Względności, energia ta napędzała wykładnicze rozszerzanie się Wszechświata, którego prędkość (parametr Hubble'a $H_{inf}$) wyraża się wzorem:
+\begin{equation}
+    H_{inf}^2 \approx \frac{V_0}{3 M_{Pl}^2} \quad \implies \quad H_{inf} \simeq \sqrt{\frac{\lambda}{12}} \frac{M_{BCC}^2}{M_{Pl}}
+\end{equation}
+
+\subsection*{3. Rozrzedzanie Strun (String Dilution via e-folds)}
+Współczynnik skali $a(t)$ rósł w tym czasie wykładniczo:
+\begin{equation}
+    a(t) = a(t_0) \exp\left( \int H_{inf} \, dt \right) = a(t_0) e^{N_e}
+\end{equation}
+gdzie $N_e$ to liczba e-składzeń (e-folds). Aby rozrzedzić uciążliwe struny kosmiczne (których gęstość spada jak $a^{-2}$) do poziomu, w którym wymykają się detektorom NANOGrav, inflacja musiała trwać minimum:
+\begin{equation}
+    N_e \gtrsim 60
+\end{equation}
+Oznacza to, że gęstość strun spadła o współczynnik $e^{-120} \approx 10^{-53}$.
+
+\subsection*{4. Temperatura Ponownego Nagrzania (Reheating Constraint)}
+Po zakończeniu inflacji (gdy $\phi \to M_{BCC}$), pole rozpada się na cząstki Modelu Standardowego. Energia z próżni zamienia się w gorącą plazmę o temperaturze $T_{RH}$. Dla spójności modelu SHZ-BCC (wymóg istnienia termicznej Leptogenezy dla asymetrii materii) mamy sztywne ramy dla tej temperatury:
+\begin{equation}
+    10^{10} \text{ GeV} \lesssim T_{RH} \ll M_{BCC}
+\end{equation}
+Górna granica upewnia nas, że struny nie uformują się ponownie, a dolna pozwala Ciemnej Materii (Ciepłym Neutrinom $\nu_R$) nabrać odpowiedniej gęstości!
+
+\end{document}

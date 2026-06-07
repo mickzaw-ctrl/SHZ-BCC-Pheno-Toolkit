@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\begin{document}
+
+\section*{Holographic Tensor Networks and the SHZ-BCC Entanglement Entropy}
+
+Przejście do paradygmatu Holografii i Kwantowej Teorii Informacji (np. ramy AdS/CFT, sieci tensorowe MERA lub Tensor Network Renormalization) otwiera najbardziej nowoczesną perspektywę na model SHZ-BCC. Zamiast mówić po prostu o "równaniach fizyki cząstek", patrzymy na to jako na **architekturę przepływu informacji**.
+
+\subsection*{1. Horyzont jako Macierz Gęstości}
+Zgodnie z klasyczną pracą Ryu-Takayanagi oraz pracami Susskinda, pole powierzchni horyzontu czarnej dziury lub horyzontu de Sittera (kosmologicznego) jest zdefiniowane przez **Entropię Splątania** (Entanglement Entropy) rejonów po dwóch jego stronach:
+\begin{equation}
+    S_{VN} = - \text{Tr} \left( \rho_{A} \ln \rho_{A} \right) = \frac{\text{Area}}{4 G_N}
+\end{equation}
+
+W modelu SHZ-BCC wprowadziliśmy fundamentalne 2D złącze horyzontu (joint) opisane przestrzenią $8$ kanałów informacyjnych ($\mathbb{C}^8$).
+Normalnie, gdyby po drugiej stronie horyzontu zaszły maksymalnie przypadkowe i nieskorelowane fluktuacje próżni (tzw. "stan maksymalnie mieszany" $\rho = I / 8$), entropia na tym złączu osiągnęłaby maksymalną wartość informacyjną dla tego układu: 
+\begin{equation}
+    S_{max} = \log_2(8) = 3 \text{ bity (qubity)}.
+\end{equation}
+W tym stanie, gigantyczna energia pętli kwantowych po jednej stronie "dusiłaby" się z pętlami po drugiej stronie, generując monstrualną stałą kosmologiczną rzędu $\Lambda \sim 10^{120}$.
+
+\subsection*{2. Wyzerowanie Entropii przez warunek BCC}
+Model SHZ-BCC wprowadza jednak warunek nakazujący fizycznym obserwablom bycie niezmienniczymi na grupę $Z_2^3$. W algebrze macierzy gęstości, działanie "group-averaging" wymusza tzw. \textbf{Purification (Oczyszczenie Stanu)}. 
+Wszystkie 8 kanałów zostaje zmuszonych do kolapsu w jeden potężnie splątany stan singletowy:
+\begin{equation}
+    |u\rangle = \frac{1}{\sqrt{8}} \sum_{i=1}^8 |i\rangle.
+\end{equation}
+Ponieważ ten stan jest czysty (Pure State), w idealnym ujęciu, jego macierz gęstości ma jedno pole własne równe $1$, a pozostałe siedem jest równych $0$.
+Entropia Von Neumanna takiego idealnego złącza drastycznie spada do absolutnego zera:
+\begin{equation}
+    S_{VN}^{BCC} = 0.
+\end{equation}
+
+\subsection*{3. Stała Kosmologiczna z Zaburzeń (Quantum Noise)}
+W prawdziwym kwantowym świecie perfekcyjna cisza nie istnieje (zawsze jest trochę szumu/dekoherencji). Skrypt symuluje, co by się stało, gdyby uśrednienie SHZ-BCC posiadało mikroskopijne pęknięcia z prawdopodobieństwem szumu $p$ (zaburzenie holograficzne).
+Gdy system delikatnie "rozkleja się" (Entropia Von Neumanna przestaje wynosić dokładnie $0$), do makroskopowego świata wycieka minimalna \textbf{Resztkowa Energia Próżni}. Wartość $\Lambda_{obs} \sim 10^{-52} \text{ m}^{-2}$ widziana dzisiaj przez astronomów odpowiada sytuacji, w której kwantowe uśrednienie na złączach działa poprawnie ze zdumiewającą precyzją, a ucieka jedynie "szum" rzędu $p \sim 10^{-120}$.
+
+\end{document}
